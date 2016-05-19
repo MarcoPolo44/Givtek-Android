@@ -21,11 +21,21 @@ public class DonateActivity extends Activity {
         setContentView(R.layout.donate_layout);
 
         charityText = (TextView) findViewById(R.id.charity_id);
-        charityText.setText("Ronald McDonald House Charities®");
+        displayCharity();
+    }
 
-        showNotification(
-                "Givtek - Donation Nearby",
-                "33211:2659");
+    public void displayCharity() {
+        MyApplication context = ((MyApplication) getApplicationContext());
+        context.getBeaconKey();
+
+        if (context.getBeaconKey().equals("33211:2659"))
+        {
+            charityText.setText("Ronald McDonald House Charities®");
+
+            showNotification(
+                    "Givtek - Donation Nearby",
+                    context.getBeaconKey());
+        }
     }
 
     public void showNotification(String title, String message) {

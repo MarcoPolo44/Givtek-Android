@@ -3,7 +3,6 @@ package com.MarcoPolitakisGmailCom.GivtekAndroid9Cl;
 import android.app.Application;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.widget.Toast;
 
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
@@ -16,6 +15,7 @@ import java.util.UUID;
 public class MyApplication extends Application {
 
     private BeaconManager beaconManager;
+    private String beaconKey;
 
     @Override
     public void onCreate() {
@@ -24,6 +24,7 @@ public class MyApplication extends Application {
         EstimoteSDK.initialize(getApplicationContext(), "givtek-android-9cl", "337d12f80f75aea3b51d3b728548b87b");
 
         beaconManager = new BeaconManager(getApplicationContext());
+        beaconKey = null;
 
         beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
             @Override
@@ -38,19 +39,26 @@ public class MyApplication extends Application {
         beaconManager.setMonitoringListener(new BeaconManager.MonitoringListener() {
             @Override
             public void onEnteredRegion(Region region, List<Beacon> list) {
-                regionEntered();
+                if (!list.isEmpty()) {
+                    Beacon beacon = list.get(0);
+                    beaconKey = String.format("%d:%d", beacon.getMajor(), beacon.getMinor());
+                    regionEntered();
+                }
             }
 
             @Override
             public void onExitedRegion(Region region) {
+                beaconKey = null;
                 regionExited();
             }
         });
     }
 
-    public void regionEntered() {
-        Toast.makeText(this, "onEnteredRegion", Toast.LENGTH_LONG).show();
+    public String getBeaconKey() {
+        return beaconKey;
+    }
 
+    public void regionEntered() {
         // Explicit intent to wrap
         Intent intent = new Intent(this, DonateActivity.class);
 
@@ -65,8 +73,6 @@ public class MyApplication extends Application {
     }
 
     public void regionExited() {
-        Toast.makeText(this, "onExitedRegion", Toast.LENGTH_LONG).show();
-
         // Explicit intent to wrap
         Intent intent = new Intent(this, MainActivity.class);
 

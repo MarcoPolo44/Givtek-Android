@@ -1,0 +1,4 @@
+CHANGED,C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\MarcoPolitakisGmailCom\GivtekAndroid9Cl\MyApplication$1$override.class
+CHANGED,C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\MarcoPolitakisGmailCom\GivtekAndroid9Cl\MyApplication$2$override.class
+CHANGED,C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\MarcoPolitakisGmailCom\GivtekAndroid9Cl\MyApplication$override.class
