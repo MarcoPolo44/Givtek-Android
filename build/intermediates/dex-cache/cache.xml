@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.0_56408aa56471f715825f858098cac4fbc02b2498.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.0_74028a3549cd4afcd9c98ce516f5eae7c171c9f4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.0_3439b61209f65898abc55761717e6078bafef360.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2c4caf797cd9a51ba8dbbbf82138334bb7940cdc">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_b2e9074c2f8ef82a7087c4f4f55792a15c189292.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.0_b714ef7c9fa735ac7690181ee0f2ea790f1e3383.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\.android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0_7ab701a712636d26b1d8b884014622a28f5829c7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\exploded-aar\com.estimote\sdk\0.10.4\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8cb147d4aad3f5dd48208ee338e6575367827e2e">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\com.estimote-sdk-0.10.4_6042cd98f55dc6528450d8c5c85c441141b1c7c2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0_109be1e54652c5efce1ff12996a2652c4317781b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="290a97b5f70bc54d4d2fc4d9d5c6e558c7943d49">
+        <dex dex="C:\Users\Marco\AndroidStudioProjects\GivtekAndroid9Cl\app\build\intermediates\pre-dexed\debug\instant-run_f2530bec3ab90bbedb8086bfd3e591bad42b5b4c.jar" />
+    </item>
+
+</items>
