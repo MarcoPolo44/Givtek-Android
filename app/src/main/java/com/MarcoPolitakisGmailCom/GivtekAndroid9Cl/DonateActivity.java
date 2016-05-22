@@ -35,6 +35,18 @@ public class DonateActivity extends Activity {
         displayCharity();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MyApplication.activityResumed();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MyApplication.activityPaused();
+    }
+
     public void displayCharity() {
         MyApplication context = ((MyApplication) getApplicationContext());
         context.getBeaconKey();
@@ -46,10 +58,6 @@ public class DonateActivity extends Activity {
             charityText.setText("Ronald McDonald House Charities®");
             charityImage.setImageResource(R.drawable.rmhcnz);
             charityUri = Uri.parse("http://nokket.com/");
-
-            showNotification(
-                    "Givtek - Donation Nearby",
-                    context.getBeaconKey());
         }
 
         donateButton.setOnClickListener(new View.OnClickListener() {
@@ -59,23 +67,5 @@ public class DonateActivity extends Activity {
                 startActivity(intent);
             }
         });
-    }
-
-    public void showNotification(String title, String message) {
-        Intent notifyIntent = new Intent(this, MainActivity.class);
-        notifyIntent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        PendingIntent pendingIntent = PendingIntent.getActivities(this, 0,
-                new Intent[] { notifyIntent }, PendingIntent.FLAG_UPDATE_CURRENT);
-        Notification notification = new Notification.Builder(this)
-                .setSmallIcon(android.R.drawable.ic_dialog_info)
-                .setContentTitle(title)
-                .setContentText(message)
-                .setAutoCancel(true)
-                .setContentIntent(pendingIntent)
-                .build();
-        notification.defaults |= Notification.DEFAULT_SOUND;
-        NotificationManager notificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(1, notification);
     }
 }
